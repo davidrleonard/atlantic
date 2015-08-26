@@ -1,0 +1,48 @@
+%button-base {
+  -webkit-appearance: none;
+	cursor: pointer;
+	background-color: $color-grey-700;
+  color: white;
+  font-weight: 700;
+  @include default-transition(background-color);
+	border: 0;
+	border-radius: $border-radius;
+	font-size: $base-font-size;
+	font-weight: strong;
+	text-align: center;
+	margin: {
+		top: .5em;
+		bottom: .5em;
+		right: .5em;
+	}
+  padding: .5em .7em;
+	outline: none;
+	&:after {
+		display: none;
+	}
+	&:hover {
+		background-color: $color-grey-900;
+	}
+}
+
+.button {
+  @extend %button-base;
+}
+
+// .button-secondary {
+//   @extend %button-base;
+//   background-color: $color-base-link;
+//   &:active, &:hover {
+// 		background-color: darken($color-base-link, 20);
+// 	}
+// }
+
+.button-large {
+  font-size: 1.5em;
+  margin: {
+		top: .5em;
+		bottom: .5em;
+		right: .5em;
+	}
+  padding: .5em .7em;
+}

@@ -1,0 +1,57 @@
+// *** JINGLE FRAMEWORK
+// *** Thanks to Norris Hung and the Code for America Chime team for the
+// *** beginnings of this simple framework.
+
+// Vendor -------------- //
+// We rely on Bourbon/Neat framework, and set our own grid-settings
+
+@import 'bourbon/app/assets/stylesheets/bourbon';
+@import 'core/grid-settings';
+@import 'neat/app/assets/stylesheets/neat';
+
+// Jingle core -------------- //
+// Variables, utilities, grids and other items that underly the framework
+
+@import 'core/defaults';
+@import 'core/variables';
+@import 'core/utilities';
+@import 'core/normalize';
+@import 'core/base';
+@import 'core/grid';
+
+// Jingle core elements ---------- //
+// Styles basic html elements.
+
+@import 'core-elements/inline';
+@import 'core-elements/typography';
+@import 'core-elements/list';
+@import 'core-elements/table';
+@import 'core-elements/aside';
+@import 'core-elements/blockquote';
+@import 'core-elements/figure';
+@import 'core-elements/button';
+@import 'core-elements/form';
+@import 'core-elements/icons';
+
+// Jingle core patterns --------- //
+// Helpful, modular CSS items that can be used across different sites
+
+@import 'core-patterns/global-header';
+@import 'core-patterns/global-footer';
+@import 'core-patterns/section-slab';
+
+// Atlantic patterns --------- //
+// Frequently-used patterns specific to this project
+
+// @import 'atlantic-patterns/xxxxx';
+
+// Atlantic templates --------- //
+// A base layout for all pages, and specific layouts for other pages as necessary
+
+@import 'atlantic-templates/base-layout';
+// @import 'atlantic-templates/page-xxxxx';
+
+// Hacks --------- //
+// Temporary solutions until a better permanant solution is found
+
+@import 'shame';
