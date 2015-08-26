@@ -1,0 +1,23 @@
+{
+  "name": "atlantic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "~2.0.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-sass": "~0.18.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidrleonard/atlantic.git"
+  },
+  "author": "David Leonard",
+  "bugs": {
+    "url": "https://github.com/davidrleonard/atlantic/issues"
+  },
+  "homepage": "https://github.com/davidrleonard/atlantic"
+}

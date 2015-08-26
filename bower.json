@@ -1,0 +1,23 @@
+{
+  "name": "atlantic",
+  "version": "1.0.0",
+  "homepage": "https://github.com/davidrleonard/atlantic",
+  "authors": [
+    "davidrleonard <davidrobertleonard@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "neat": "~1.7.2",
+    "bourbon": "~4.2.3"
+  }
+}

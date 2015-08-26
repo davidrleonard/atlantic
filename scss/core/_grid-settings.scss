@@ -1,0 +1,9 @@
+// Define Neat Grid Settings here
+// https://github.com/thoughtbot/neat
+
+@import 'neat/app/assets/stylesheets/neat-helpers';
+
+// Change the grid settings
+$column: 90px;
+$gutter: 80px;
+$grid-columns: 12;
