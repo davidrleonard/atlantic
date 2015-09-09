@@ -1,0 +1,10 @@
+.logo {
+  @include vertical-center();
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  @include media($mobile-up) {
+    float: left;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+  }
+}

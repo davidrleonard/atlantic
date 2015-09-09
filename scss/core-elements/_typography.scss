@@ -1,6 +1,7 @@
 html {
 	font-family: $font-sans;
 	font-size: $em-base;
+	color: $color-base-font;
 }
 
 body {
@@ -11,15 +12,18 @@ body {
 
 p {
 	margin: {
-		top: 1em;
-		bottom: 1em;
+		top: 0;
+		bottom: 0;
 	}
 }
 
+* + p { margin-top: 1em; }
+
 a {
-	color: $color-base-link;
+	color: $color-primary;
+	font-weight: 700;
 	&:hover, &:active, &:visited {
-		color: $color-base-link;
+		color: darken($color-primary, 30%);
 	}
 }
 
@@ -29,22 +33,29 @@ a.unstyled {
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	clear: both;
 	margin: {
-		bottom: .5em;
+		bottom: 0;
+		top: 0;
 	}
 	line-height: $heading-line-height;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.05em;
 }
 
 * + h1,
+* + .h1,
 * + h2,
+* + .h2,
 * + h3,
+* + .h3,
 * + h4,
+* + .h4,
 * + h5,
-* + h6 {
-	margin-top: 1em;
+* + .h5,
+* + h6,
+* + .h6 {
+	margin-top: .5em;
 }
 
 // Create heading mixins
@@ -52,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 @mixin title {
 	font-size: $title-font-size;
 	font-weight: 700;
+	* + & { margin-top: 1.5rem; }
 }
 
 @mixin h1 {
@@ -84,9 +96,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-h1 { @include h1(); }
-h2 { @include h2(); }
-h3 { @include h3(); }
-h4 { @include h4(); }
-h5 { @include h5(); }
-h6 { @include h6(); }
+h1, .h1 { @include h1(); }
+h2, .h2 { @include h2(); }
+h3, .h3 { @include h3(); }
+h4, .h4 { @include h4(); }
+h5, .h5 { @include h5(); }
+h6, .h6 { @include h6(); }
+.title  { @include title(); }
+
+// Alignment accents
+.text-align-center {
+	text-align: center;
+}
+
+// Color accents
+.text-color-primary { color: $color-primary; }
+.text-color-secondary { color: $color-secondary; }
+.text-color-accent { color: $color-accent; }

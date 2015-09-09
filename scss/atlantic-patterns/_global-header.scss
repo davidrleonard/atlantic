@@ -1,0 +1,13 @@
+.global-header {
+  @include clearfix();
+  @include outer-container();
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: $header-height;
+  padding: 0 $site-margins;
+
+  background-color: $color-grey-800;
+  color: white;
+}

@@ -43,7 +43,13 @@
 // Atlantic patterns --------- //
 // Frequently-used patterns specific to this project
 
-// @import 'atlantic-patterns/xxxxx';
+@import 'atlantic-patterns/global-header';
+@import 'atlantic-patterns/global-footer';
+@import 'atlantic-patterns/site-section';
+@import 'atlantic-patterns/nav';
+@import 'atlantic-patterns/logo';
+@import 'atlantic-patterns/card';
+@import 'atlantic-patterns/press-logos';
 
 // Atlantic templates --------- //
 // A base layout for all pages, and specific layouts for other pages as necessary

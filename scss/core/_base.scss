@@ -1,13 +1,19 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .site-content {
   padding: 0 $site-margins;
+}
+
+// When global-header precedes site-content, put a $header-height margin-top
+// because the global-header is position: fixed (out of layout flow)
+.global-header + .site-content {
+  margin-top: $header-height;
 }
 
 .lt-ie9 {

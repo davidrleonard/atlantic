@@ -1,0 +1,8 @@
+.press-logos ul {
+  li {
+    display: inline-block;
+    @include media($tablet-up) {
+      width: calc(100% / 5.2);
+    }
+  }
+}

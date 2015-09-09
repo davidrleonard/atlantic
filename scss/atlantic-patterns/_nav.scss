@@ -1,0 +1,23 @@
+.nav {
+  display: none;
+  @include media($tablet-up) {
+    display: inherit;
+    @include vertical-center();
+    right: $site-margins;
+  }
+}
+
+.nav ul {
+  li {
+    display: inline-block;
+  }
+  li + li {
+    margin-left: 1em;
+  }
+  a {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+
+  }
+}

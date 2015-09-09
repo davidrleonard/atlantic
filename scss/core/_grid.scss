@@ -1,8 +1,8 @@
 .site-section {
 	@include outer-container();
-	max-width: $site-max-width;
+	// max-width: $site-max-width;
 
-	@include media($tablet-up) {
+	@include media($midscreen-up) {
 		// Defines width of element
 		.width-one-whole {
 			@include span-columns(12);
@@ -62,6 +62,9 @@
 		}
 		.shift-five-sixths {
 			@include shift(10);
+		}
+		.shift-one-eigth {
+			@include shift(1.5);
 		}
 		.shift-one-twelfth {
 			@include shift(1);

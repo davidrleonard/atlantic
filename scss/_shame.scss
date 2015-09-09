@@ -1,1 +1,85 @@
+// The grey wrapper around the site content
+.site-wrapper {
+  @include outer-container();
+  background-color: $color-grey-100;
+}
 
+// Or this style
+.site-section-header {
+  position: relative;
+  width: 100%;
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   margin-left: calc(-1 * #{$site-margins});
+  //   width: calc(100% + (#{$site-margins * 2}));
+  //   height: 1px;
+  //   background-color: $color-grey-400;
+  // }
+
+  h2 {
+    font-size: 3em;
+    // padding-top: .5em;
+    padding-bottom: .5em;
+  }
+}
+
+.site-section-header--reverse {
+  &:before {
+    background-color: white;
+  }
+  h2 {
+    color: white;
+  }
+}
+
+// Special card for mailing list signup
+.card--mailing-list {
+  // background-color: $color-blue-dark;
+  background-color: transparent;
+  // border: 1px solid $color-grey-600;
+  color: $color-grey-600;
+  font-weight: 700;
+  margin-top: 2em;
+  box-shadow: none;
+
+  input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-grey-600;
+    color: $color-grey-600;
+    @include placeholder() {
+      color: $color-grey-600;
+      font-weight: 400;
+    }
+  }
+  input[type="submit"] {
+    background-color: transparent;
+    color: $color-grey-600;
+    border: 1px solid $color-grey-600;
+    padding: 1.3em .7em;
+    line-height: 0;
+    font-weight: 700;
+    &:hover {
+      color: white;
+      background-color: darken($color-grey-600, 20%);
+      border-color: darken($color-grey-600, 20%);
+    }
+  }
+
+  @include media($tablet-up) {
+    input[type="text"] {
+      width: auto;
+      width: calc(100% - (100px + 2em));
+      display: inline-block;
+    }
+    input[type="submit"] {
+      width: auto;
+      width: calc(100px * 1);
+      display: inline-block;
+      margin-left: .5em;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.site-section {
+  padding: {
+    top: 1em;
+    bottom: 1em;
+  }
+  @include media($mobile-up) {
+    padding: {
+      top: 4em;
+      bottom: 4em;
+    }
+  }
+}
+
+.site-section.site-section--has-bg-img {
+  margin-left: -$site-margins;
+  width: calc(100% + (#{$site-margins} * 2));
+  padding: $site-margins;
+  background-size: cover;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  color: white;
+  a { color: white; }
+}
+
+.site-section--header-img {
+  // margin-left: -$site-margins;
+  //
+  // max-width: calc(100% + (40px * 2));
+  // width: calc(100% + (40px * 2));
+  //
+  // min-height: 25em;
+  // background-size: cover;
+  // background-position: 1px center;
+  //
+  // margin-bottom: -10em;
+}

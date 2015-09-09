@@ -1,0 +1,28 @@
+// A card-style box that inherits its width from a layout class. Has a shadow,
+// padding and can be filled in different ways.
+
+.card {
+  width: inherit;
+  background-color: white;
+  box-shadow: $box-shadow;
+  padding: $card-padding;
+  overflow: hidden;
+}
+
+* + .card {
+  margin-top: 1em;
+}
+
+// Card children
+.card-img {
+  margin: {
+    top: -$card-padding;
+    left: -$card-padding;
+  }
+  // For browsers that don't support calc
+  max-width: 120%;
+  width: 120%;
+  // For browsers that do support calc
+  max-width: calc(100% + (#{$card-padding} * 2));
+  width: calc(100% + (#{$card-padding} * 2));
+}
