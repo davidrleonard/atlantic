@@ -1,7 +1,36 @@
 // The grey wrapper around the site content
 .site-wrapper {
   @include outer-container();
-  background-color: $color-grey-100;
+  // background-color: $color-grey-100;
+}
+
+// Custom style for the top of the homepage
+.site-section--hero {
+  background-image: url('/static/img/man.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  margin-left: -$site-margins;
+  width: calc(100% + #{$site-margins * 2});
+  max-width: calc(100% + #{$site-margins * 2});
+
+  padding-left: $site-margins;
+  padding-right: $site-margins;
+  @include media($tablet-up) {
+    padding-left: $site-margins * 2;
+    padding-right: $site-margins * 2;
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+
+  * { color: white; }
+}
+
+.site-section--hero-story {
+  margin-top: -2em;
+  @include media($tablet-up) {
+    margin-top: -7em;
+  }
 }
 
 // Or this style

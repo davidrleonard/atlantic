@@ -10,9 +10,9 @@ body {
   padding: 0 $site-margins;
 }
 
-// When global-header precedes site-content, put a $header-height margin-top
+// When global-header precedes site-wrapper, put a $header-height margin-top
 // because the global-header is position: fixed (out of layout flow)
-.global-header + .site-content {
+.global-header + .site-wrapper {
   margin-top: $header-height;
 }
 

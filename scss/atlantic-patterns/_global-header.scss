@@ -1,6 +1,6 @@
 .global-header {
   @include clearfix();
-  @include outer-container();
+  // @include outer-container();
   position: fixed;
   top: 0;
   z-index: 99;

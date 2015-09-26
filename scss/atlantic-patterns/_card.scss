@@ -13,8 +13,7 @@
   margin-top: 1em;
 }
 
-// Card children
-.card-img {
+%break-card {
   margin: {
     top: -$card-padding;
     left: -$card-padding;
@@ -25,4 +24,16 @@
   // For browsers that do support calc
   max-width: calc(100% + (#{$card-padding} * 2));
   width: calc(100% + (#{$card-padding} * 2));
+}
+
+// Card children
+.card-img {
+  @extend %break-card;
+}
+
+.card-color-header {
+  @extend %break-card;
+  padding: $card-padding;
+  background-color: $color-pink-dark;
+  color: white;
 }

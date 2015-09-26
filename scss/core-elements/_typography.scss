@@ -105,7 +105,8 @@ h6, .h6 { @include h6(); }
 .title  { @include title(); }
 
 // Alignment accents
-.text-align-center {
+.text-align-center,
+.text-align-center * {
 	text-align: center;
 }
 
