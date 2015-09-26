@@ -1,8 +1,9 @@
 .press-logos ul {
   li {
     display: inline-block;
+    width: calc(100% / 2.2);
     @include media($tablet-up) {
-      width: calc(100% / 5.2);
+      width: calc(100% / 6.2);
     }
   }
 }

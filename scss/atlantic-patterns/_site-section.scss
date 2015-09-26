@@ -1,3 +1,9 @@
+%bust-site-section {
+  margin-left: -$site-margins;
+  width: calc(100% + #{$site-margins * 2});
+  max-width: calc(100% + #{$site-margins * 2});
+}
+
 .site-section {
   padding: {
     top: 1em;
@@ -37,4 +43,9 @@
 
 .site-section--skinny {
   max-width: $section-width;
+}
+
+.site-section--bg-blue {
+  @extend %bust-site-section;
+  background-color: $color-blue-dark;
 }

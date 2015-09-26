@@ -13,7 +13,7 @@
   margin-top: 1em;
 }
 
-%break-card {
+%bust-card {
   margin: {
     top: -$card-padding;
     left: -$card-padding;
@@ -28,11 +28,11 @@
 
 // Card children
 .card-img {
-  @extend %break-card;
+  @extend %bust-card;
 }
 
 .card-color-header {
-  @extend %break-card;
+  @extend %bust-card;
   padding: $card-padding;
   background-color: $color-pink-dark;
   color: white;

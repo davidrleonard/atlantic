@@ -6,7 +6,7 @@
 
 // Custom style for the top of the homepage
 .site-section--hero {
-  background-image: url('/static/img/man.jpg');
+  background-image: url('/static/img/young-flip.jpg');
   background-size: cover;
   background-position: center center;
 
@@ -69,32 +69,35 @@
   // background-color: $color-blue-dark;
   background-color: transparent;
   // border: 1px solid $color-grey-600;
-  color: $color-grey-600;
+  color: white;
   font-weight: 700;
-  margin-top: 2em;
   box-shadow: none;
-
+  p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+  }
   input[type="text"] {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid $color-grey-600;
-    color: $color-grey-600;
+    border-bottom: 1px solid white;
+    color: white;
     @include placeholder() {
-      color: $color-grey-600;
+      color: white;
       font-weight: 400;
     }
   }
   input[type="submit"] {
     background-color: transparent;
-    color: $color-grey-600;
-    border: 1px solid $color-grey-600;
+    color: white;
+    border: 1px solid white;
     padding: 1.3em .7em;
     line-height: 0;
     font-weight: 700;
     &:hover {
       color: white;
-      background-color: darken($color-grey-600, 20%);
-      border-color: darken($color-grey-600, 20%);
+      background-color: darken(white, 20%);
+      border-color: darken(white, 20%);
     }
   }
 
