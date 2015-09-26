@@ -1,0 +1,48 @@
+.global-footer {
+  padding: $site-margins;
+
+  background-color: $color-grey-800;
+  color: white;
+}
+
+.global-footer-links {
+  margin-top: 1.5em;
+  @include media($mobile-up) {
+    margin-top: 0;
+  }
+
+  color: white;
+  a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      opacity: 0.5;
+      bottom: 2px;
+      left: 0;
+      position: absolute;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+  li + li {
+    margin-top: .25em;
+  }
+  .global-footer-link--header {
+    font-weight: 700;
+  }
+  * + .global-footer-link--header {
+    margin-top: 1.5em;
+  }
+}

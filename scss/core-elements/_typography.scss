@@ -114,3 +114,8 @@ h6, .h6 { @include h6(); }
 .text-color-primary { color: $color-primary; }
 .text-color-secondary { color: $color-secondary; }
 .text-color-accent { color: $color-accent; }
+
+// Smaller text (i.e. disclaimer in the footer)
+.text-smaller {
+	font-size: 0.8em;
+}
