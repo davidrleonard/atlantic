@@ -45,6 +45,11 @@
     padding-bottom: 10em;
   }
 
+  h1 { font-size: 2em; }
+  @include media($mobile-up) {
+    h1 { @include h1(); }
+  }
+
   * { color: white; }
 
   .button {
@@ -60,7 +65,7 @@
 }
 
 .page-home .site-section--hero-story {
-  margin-top: -2em;
+  margin-top: 0;
   @include media($tablet-up) {
     margin-top: -7em;
   }

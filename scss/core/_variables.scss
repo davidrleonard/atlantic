@@ -52,8 +52,12 @@ $color-yellow:        #f2d573;
 $color-yellow-light:  #f7e3a1;
 $color-yellow-xlight: #fbf1d0;
 
+$color-green: #33A239;
+$color-green-dark: darken($color-green,20%);
+$color-green-light: lighten($color-green,20%);
+
 // Define our brand
-$color-primary:       $color-blue-medium;
+$color-primary:       $color-blue-dark;
 $color-secondary:     $color-pink;
 $color-accent:        $color-yellow;
 
